@@ -7,8 +7,6 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <!--=============== BOXICONS ===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <!--=============== SWIPER CSS ===============--> 
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <!--=============== CSS ===============--> 
     <link rel="stylesheet" href="./css/styles.css">
     <title>Cafena</title>
@@ -17,8 +15,8 @@
     <!--Header-->
     <header class="header" id="header">
         <nav class="nav container">        
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list flex">
+            <div class="nav__menu flex" id="nav-menu">
+                <ul class="nav__list nav__list_left flex">
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">Home</a>
                     </li>
@@ -29,11 +27,11 @@
                         <a href="#menu" class="nav__link">Menu</a>
                     </li>              
                     <li class="nav__item">
-                        <a href="#eeservation" class="nav__link">Reservation</a>
+                        <a href="#reservation" class="nav__link">Reservation</a>
                     </li>
-                    <div class="nav__logo">
-                        <img src="./img/logo.svg" alt="" class="nav__logo-img">
-                    </div> 
+                </ul>
+                <img src="./img/header-logo.png" alt="" class="nav__logo">
+                <ul class="nav__list nav__list_right flex">
                     <li class="nav__item">
                         <a href="#pages" class="nav__link">Pages</a>
                     </li>
@@ -44,19 +42,13 @@
                         <a href="#contact" class="nav__link">Contact</a>
                     </li>             
                 </ul>
+                <div class="nav__icon flex">
+                    <i class='bx bx-search' ></i>
+                    <i class='bx bx-menu' ></i>
+                </div>
             </div>
         </nav>
     </header>
-<!-- 
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
-                </div>
-                <img src="./img/footer-logo.png" alt="" class="nav__img">
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-grid-alt'></i>
-            </div> -->
 
     <!-- Start Main -->
 
@@ -69,30 +61,30 @@
                     <p class="home__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis itaque ipsa? Pariatur beatae nihil aliquid inventore ad, atque quaerat excepturi eum dicta optio! Nostrum vero voluptatum suscipit blanditiis provident.</p>      
                     <div class="home__buttons">
                         <a href="#" class="button">Explore Now</a>
-                        <a href="#" class="button">Read Now</a>
+                        <a href="#" class="button button_transparent">Read Now</a>
                     </div>
                 </div>
-                <img src="./img/header.svg" alt="" class="home__img">
+                <img src="./img/header.png" alt="" class="home__img">
             </div>
         </section>
     
         <!-- section features -->   
-        <div class="features container" id="features"> 
+        <div class="features container" id="about"> 
             <div class="flex">
                 <div class="features__data">
-                    <img src="./img/flavor.svg" alt="" class="features__img">
+                    <img src="./img/feature1.png" alt="" class="features__img">
                     <h3 class="features__title" data-number="01">Best Coffee Flavor</h3>
                     <p class="features__description">Curabitur semper erat a lacusey sedny consequat,sit ametey.</p>
                 </div>
     
                 <div class="features__data">
-                    <img src="./img/roasting.svg" alt="" class="features__img">
+                    <img src="./img/feature2.png" alt="" class="features__img">
                     <h3 class="features__title" data-number="02">Proper Roasting</h3>
                     <p class="features__description">Curabitur semper erat a lacusey sedny consequat,sit ametey.</p>
                 </div>
 
                 <div class="features__data">
-                    <img src="./img/place.svg" alt="" class="features__img">
+                    <img src="./img/feature3.png" alt="" class="features__img">
                     <h3 class="features__title" data-number="03">Place to Get Lost</h3>
                     <p class="features__description">Curabitur semper erat a lacusey sedny consequat,sit ametey.</p>
                 </div>
@@ -109,38 +101,38 @@
         </section>
     
         <!-- section product -->    
-        <section class="product container" id="product">
+        <section class="product container" id="menu">
             <div class="product__container">
                 <a href="#" class="button product__button">Popular Product</a>
                 <h2 class="product__title">Cafena Popular Product</h2>
                 <div class="grid product__cards_grid">
                     <div class="product__card">
-                        <img src="./img/product1.svg" alt="" class="product__img">
+                        <img src="./img/product1.png" alt="" class="product__img">
                         <h4 class="product__name">Vicaragua Coffee Beans</h4>
                         <span class="product__price">29$</span>
                     </div>
                     <div class="product__card">
-                        <img src="./img/product1.svg" alt="" class="product__img">
+                        <img src="./img/product1.png" alt="" class="product__img">
                         <h4 class="product__name">Vicaragua Coffee Beans</h4>
                         <span class="product__price">29$</span>
                     </div>
                     <div class="product__card">
-                        <img src="./img/product2.svg" alt="" class="product__img">
+                        <img src="./img/product2.png" alt="" class="product__img">
                         <h4 class="product__name">Espresso Ristretto</h4>
                         <span class="product__price">29$</span>
                     </div>
                     <div class="product__card">
-                        <img src="./img/product2.svg" alt="" class="product__img">
+                        <img src="./img/product2.png" alt="" class="product__img">
                         <h4 class="product__name">Espresso Ristretto</h4>
                         <span class="product__price">29$</span>
                     </div>
                     <div class="product__card">
-                        <img src="./img/product3.svg" alt="" class="product__img">
+                        <img src="./img/product3.png" alt="" class="product__img">
                         <h4 class="product__name">Ethiopia Coffee</h4>
                         <span class="product__price">29$</span>
                     </div>
                     <div class="product__card">
-                        <img src="./img/product3.svg" alt="" class="product__img">
+                        <img src="./img/product3.png" alt="" class="product__img">
                         <h4 class="product__name">Ethiopia Coffee</h4>
                         <span class="product__price">29$</span>
                     </div>
@@ -162,138 +154,133 @@
             </div>
         </section>
     
-        <!-- section  coffee-->
-    
-        <section class="coffee container" id="coffee">
-            <div class="coffee__container">
-                <div class="coffee__data flex">
-                    <h2 class="coffee__title">Cafena Best Product</h2>
+        <!-- section  shop-->
+        <section class="shop container" id="shop">
+            <div class="shop__container">
+                <div class="shop__data flex">
+                    <h2 class="shop__title">Cafena Best Product</h2>
                     <a href="#" class="button">Cafena Best Product</a>
                 </div>
-                <div class="coffee__content flex">
-                    <div class="coffee__card">
-                        <div class="coffee__wrap_img">
-                            <img src="./img/caffee1.svg" alt="" class="coffee__img">
+                <div class="shop__content flex">
+                    <div class="shop__card">
+                        <div class="shop__wrap_img">
+                            <img src="./img/caffee1.png" alt="" class="shop__img">
                         </div>
-                        <p class="coffee__rating">Rating: <i class='bx bx-star' style='color:#eab665'></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i></p>
-                        <h3 class="coffee__subtitle">Vicaragua Coffee Beans</h3>
-                        <p class="coffee__price">Price: <span class="coffee__price_span">$25</span></p>
+                        <p class="shop__rating">Rating: <i class='bx bx-star' style='color:#eab665'></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i></p>
+                        <h3 class="shop__subtitle">Vicaragua Coffee Beans</h3>
+                        <p class="shop__price">Price: <span class="shop__price_span">$25</span></p>
                     </div>
 
-                    <div class="coffee__card">
-                        <div class="coffee__wrap_img">
-                            <img src="./img/caffee2.svg" alt="" class="coffee__img">
+                    <div class="shop__card">
+                        <div class="shop__wrap_img">
+                            <img src="./img/caffee2.png" alt="" class="shop__img">
                         </div>
-                        <p class="coffee__rating">Rating: <i class='bx bx-star' style='color:#eab665'></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i></p>
-                        <h3 class="coffee__subtitle">Vicaragua Coffee Beans</h3>
-                        <p class="coffee__price">Price: <span class="coffee__price_span">$25</span></p>
+                        <p class="shop__rating">Rating: <i class='bx bx-star' style='color:#eab665'></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i></p>
+                        <h3 class="shop__subtitle">Vicaragua Coffee Beans</h3>
+                        <p class="shop__price">Price: <span class="shop__price_span">$25</span></p>
                     </div>
 
-                    <div class="coffee__card">
-                        <div class="coffee__wrap_img">
-                            <img src="./img/caffee3.svg" alt="" class="coffee__img">
+                    <div class="shop__card">
+                        <div class="shop__wrap_img">
+                            <img src="./img/caffee3.png" alt="" class="shop__img">
                         </div>
-                        <p class="coffee__rating">Rating: <i class='bx bx-star' style='color:#eab665'></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i></p>
-                        <h3 class="coffee__subtitle">Vicaragua Coffee Beans</h3>
-                        <p class="coffee__price">Price: <span class="coffee__price_span">$25</span></p>
+                        <p class="shop__rating">Rating: <i class='bx bx-star' style='color:#eab665'></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i><i class='bx bx-star' style='color:#eab665'  ></i></p>
+                        <h3 class="shop__subtitle">Vicaragua Coffee Beans</h3>
+                        <p class="shop__price">Price: <span class="shop__price_span">$25</span></p>
                     </div>
                 </div>
             </div>
         </section>
     
         <!-- section review -->
-    
-        <section class="preview container flex" id="preview">
+        <section class="review container flex" id="review">
             <div class="btn__slider" id="btn_prev"><i class='bx bx-chevron-left-circle' style='color:#d48a5c' ></i></div>
             
-            <div class="preview__container active">
-                <a href="#" class="button preview__btn">CUSTOMER FEEDBACK</a>
-                <h2 class="preview__title">OUR CUSTOMER REVIEW</h2>
-                <p class="preview__description">It is a long established fact that a reader will be distracted by the readable content of 
+            <div class="review__container active">
+                <a href="#" class="button review__btn">CUSTOMER FEEDBACK</a>
+                <h2 class="review__title">OUR CUSTOMER REVIEW</h2>
+                <p class="review__description">It is a long established fact that a reader will be distracted by the readable content of 
                     a page when looking at its layout. The point of using Lorem opposed to using 'Content here, content here.</p>
-                <img src="./img/avatar.svg" alt="" class="preview__avatar">
-                <span class="preview__name">Rasalida Williamson</span>
+                <img src="./img/avatar.svg" alt="" class="review__avatar">
+                <span class="review__name">Rasalida Williamson</span>
             </div>
 
-            <div class="preview__container">
-                <a href="#" class="button preview__btn">CUSTOMER FEEDBACK</a>
-                <h2 class="preview__title">OUR CUSTOMER REVIEW</h2>
-                <p class="preview__description">It is a long established fact that a reader will be distracted by the readable content of 
+            <div class="review__container">
+                <a href="#" class="button review__btn">CUSTOMER FEEDBACK</a>
+                <h2 class="review__title">OUR CUSTOMER REVIEW</h2>
+                <p class="review__description">It is a long established fact that a reader will be distracted by the readable content of 
                     a page when looking at its layout.</p>
-                <img src="./img/avatar.svg" alt="" class="preview__avatar">
-                <span class="preview__name">Rasalida Williamson</span>
+                <img src="./img/avatar.svg" alt="" class="review__avatar">
+                <span class="review__name">Rasalida Williamson</span>
             </div>
 
-            <div class="preview__container">
-                <a href="#" class="button preview__btn">CUSTOMER FEEDBACK</a>
-                <h2 class="preview__title">OUR CUSTOMER REVIEW</h2>
-                <p class="preview__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum voluptate fuga, cumque 
+            <div class="review__container">
+                <a href="#" class="button review__btn">CUSTOMER FEEDBACK</a>
+                <h2 class="review__title">OUR CUSTOMER REVIEW</h2>
+                <p class="review__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum voluptate fuga, cumque 
                     aspernatur repellendus dolor quis mollitia quasi ex accusamus!</p>
-                <img src="./img/avatar.svg" alt="" class="preview__avatar">
-                <span class="preview__name">Rasalida Williamson</span>
+                <img src="./img/avatar.svg" alt="" class="review__avatar">
+                <span class="review__name">Rasalida Williamson</span>
             </div>
 
             <div class="btn__slider" id="btn_next"><i class='bx bx-chevron-right-circle' style='color:#d48a5c' ></i></div>
         </section>
     
         <!-- section reservation -->
-    
         <section class="reservation container" id="reservation">
             <div class="reservation__container flex">
                 <img src="./img/map.jpg" alt="" class="reservation__map">
                 <div class="reservation__wrap_form">
                     <h3 class="reservation__title"><span class="reservation__title_span">RESERVATION<br></span>BOOKING A TABLE</h3>
-                    <form action="" class="reservation__form">
+                    <form action="#" class="reservation__form">
+                        <i class='bx bxs-contact reservation__icon' style='color:#d58a5c' ></i>
                         <input type="text" class="reservation__input" placeholder="4 Person">
-                        <i class='bx bxs-contact' style='color:#d58a5c' ></i>
-                        <input type="text" class="reservation__input" placeholder="12/06/2022">
-                        <i class='bx bxs-calendar' style='color:#d58a5c'  ></i>
-                        <input type="text" class="reservation__input" placeholder="Email">
-                        <i class='bx bx-envelope' style='color:#d58a5c' ></i>
+                        <i class='bx bxs-calendar reservation__icon' style='color:#d58a5c'  ></i>
+                        <input type="date" class="reservation__input" value="2022-09-15">
+                        <i class='bx bx-envelope reservation__icon' style='color:#d58a5c' ></i>
+                        <input type="email" class="reservation__input" placeholder="Email">
                         <input type="button" class="button" value="BOOK A TABLE">
                     </form>
                 </div>
             </div>
         </section>
     
-        <!-- section articles -->
-    
-        <section class="articles container" id="articles">
-            <div>
-                <a href="#" class="button">FROM OUR BLOG</a>
-                <h2>OUR NEWS & ARTICLES</h2>
-            </div>
+        <!-- section news -->
+        <section class="news container" id="articles">
+            <div class="news__container">
+                <div class="news__data">
+                    <a href="#" class="button news__btn">FROM OUR BLOG</a>
+                    <h2 class="news__title">OUR NEWS & ARTICLES</h2>
+                </div>
                 <div class="news__content flex">
-                    <div class="news__group">
-                        <img src="./img/article1.svg" alt="" class="news__img">
-                        <div class="news__indicator"></div>
-                        <div class="news__details-img">
-                            <span>BY: Cafena / Burger / Apr 30, 2022</span>
+                    <div class="news__card">
+                        <img src="./img/article1.png" alt="" class="news__img">
+                        <div class="news__details">
+                            <p class="news__details-info"><span class="news__details-span">BY:</span> Cafena / Burger / Apr 30, 2022</p>
                             <h4 class="news__details-title">Build A Cool Morning With Cafena Coffee</h4>
-                            <a href="" class="news__details-subtitle">READ MORE <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                            <a href="" class="news__details-link">READ MORE <i class='bx bx-arrow-back bx-rotate-180'></i></a>
                         </div>
                     </div> 
-    
-                    <div class="news__group">
-                        <img src="./img/article2.svg" alt="" class="news__img">
-                        <div class="news__indicator"></div>
-                        <div class="news__details-img">
-                            <span>BY: Cafena / Burger / Apr 30, 2022</span>
+        
+                    <div class="news__card">
+                        <img src="./img/article2.png" alt="" class="news__img">
+                        <div class="news__details">
+                            <p class="news__details-info"><span class="news__details-span">BY:</span> Cafena / Burger / Apr 30, 2022</p>
                             <h4 class="news__details-title">Build A Cool Morning With Cafena Coffee</h4>
-                            <a href="" class="news__details-subtitle">READ MORE <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                            <a href="" class="news__details-link">READ MORE <i class='bx bx-arrow-back bx-rotate-180'></i></a>
                         </div>
                     </div> 
-    
-                    <div class="news__group">
-                        <img src="./img/article3.svg" alt="" class="news__img">
-                        <div class="news__indicator"></div>
-                        <div class="news__details-img">
-                            <span>BY: Cafena / Burger / Apr 30, 2022</span>
+        
+                    <div class="news__card">
+                        <img src="./img/article3.png" alt="" class="news__img">
+                        <div class="news__details">
+                            <p class="news__details-info"><span class="news__details-span">BY:</span> Cafena / Burger / Apr 30, 2022</p>
                             <h4 class="news__details-title">Build A Cool Morning With Cafena Coffee</h4>
-                            <a href="" class="news__details-subtitle">READ MORE <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                            <a href="" class="news__details-link">READ MORE <i class='bx bx-arrow-back bx-rotate-180'></i></a>
                         </div>
                     </div> 
                 </div>
+            </div>
         </section>
     </main>
     <!-- Finish Main -->
@@ -301,33 +288,33 @@
     <!--footer-->
     <!-- scroll up-->
     <a href="#" class="scrollup" id="scroll-up">
-        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        <i class='bx bx-up-arrow-circle' style='color:#eab665' ></i> <br> GO TO TOP
     </a>
-    <footer class="footer container">
-        <div class="footer__container ">
+    <footer class="footer__container" id="contact">
+        <div class="container">
             <div class="footer__content flex">
-                <p class="footer__number">
+                <p class="footer__info">
                     <i class='bx bx-mobile-alt' style='color:#d48a5c' ></i>
-                    <span>Phone: +88019 339 702 520</span>
+                    <span><b>Phone:</b> +88019 339 702 520</span>
                 </p>
-                <p class="footer__addres">
+                <p class="footer__info">
                     <i class='bx bx-map' style='color:#d48a5c' ></i>
-                    <span>Address: 30 North Wes New</span>
+                    <span><b>Address:</b> 30 North Wes New</span>
                 </p>
-                <div class="input-container">
-                    <input type="text" placeholder="Enter your email">
+                <div class="footer__input-container">
+                    <input type="text" class="footer__input" placeholder="Enter your email">
                     <i class='bx bx-paper-plane' style='color:#d48a5c' ></i>
-                  </div>                
+                </div>                
             </div>
         
             <div class="footer__content flex">
                 <div class="footer__description">
                     <a href="#" class="footer__logo">
-                        <img src="./img/foo" alt="" class="footer__logo-im">
+                        <img src="./img/footer-logo.png" alt="" class="footer__logo-img">
                     </a>
-                    <p class="footer__text">Donec et nibh maximus, congue est eu, mattis nunc. Praesent <br> ut quam quis quam venenatis fringilla. Morbi vestibulum</p>                 
+                    <p>Donec et nibh maximus, congue est eu, mattis nunc. Praesent <br> ut quam quis quam venenatis fringilla. Morbi vestibulum</p>                 
                 </div>
-                <div class="footer__social">
+                <div class="footer__social flex">
                     <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
                         <i class='bx bxl-facebook' style='color:#00b2ff'></i>
                     </a>
@@ -340,10 +327,9 @@
                 </div>
             </div>      
         </div>
-        <hr>
-        <span class="footer__copy">&#169; Gilyazova Natalia. All rigths reserved</span>
+        <hr class="hr">
+        <div class="footer__copy">GILYAZOVA NATALIA &#169; 2022</div>
     </footer>
-
        <!--Main JS-->
         <script src="./js/main.js"></script>
     </body>

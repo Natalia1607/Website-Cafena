@@ -1,6 +1,6 @@
 const prev = document.getElementById('btn_prev'),
       next = document.getElementById('btn_next'),
-      slides = document.querySelectorAll('.preview__container');
+      slides = document.querySelectorAll('.review__container');
 
 let index = 0;
 
@@ -13,7 +13,6 @@ const activeSlide = n => {
 
 const prepareCurrentSlide = int => {
     activeSlide(index);
-    activeDot(index);
 }
 
 const nextSlide = () => {
