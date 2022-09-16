@@ -30,7 +30,7 @@
                         <a href="#reservation" class="nav__link">Reservation</a>
                     </li>
                 </ul>
-                <img src="./img/header-logo.png" alt="" class="nav__logo">
+                <img src="./img/header-logo.png" alt="logotip" class="nav__logo" id="logotip">
                 <ul class="nav__list nav__list_right flex">
                     <li class="nav__item">
                         <a href="#pages" class="nav__link">Pages</a>
@@ -60,8 +60,8 @@
                     <h1 class="home__title">ONE OF THE BEST COFFEE HOUSE IN YOUR HOME TOWN</h1>
                     <p class="home__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis itaque ipsa? Pariatur beatae nihil aliquid inventore ad, atque quaerat excepturi eum dicta optio! Nostrum vero voluptatum suscipit blanditiis provident.</p>      
                     <div class="home__buttons">
-                        <a href="#" class="button">Explore Now</a>
-                        <a href="#" class="button button_transparent">Read Now</a>
+                        <a href="#" class="button slide-light">Explore More</a>
+                        <a href="#" class="button button_transparent slide-dark">Read More</a>
                     </div>
                 </div>
                 <img src="./img/header.png" alt="" class="home__img">
@@ -193,37 +193,37 @@
         </section>
     
         <!-- section review -->
-        <section class="review container flex" id="review">
-            <div class="btn__slider" id="btn_prev"><i class='bx bx-chevron-left-circle' style='color:#d48a5c' ></i></div>
-            
-            <div class="review__container active">
+        <section class="review container" id="review">
+            <div class="review__data">
                 <a href="#" class="button review__btn">CUSTOMER FEEDBACK</a>
                 <h2 class="review__title">OUR CUSTOMER REVIEW</h2>
-                <p class="review__description">It is a long established fact that a reader will be distracted by the readable content of 
-                    a page when looking at its layout. The point of using Lorem opposed to using 'Content here, content here.</p>
-                <img src="./img/avatar.svg" alt="" class="review__avatar">
-                <span class="review__name">Rasalida Williamson</span>
             </div>
-
-            <div class="review__container">
-                <a href="#" class="button review__btn">CUSTOMER FEEDBACK</a>
-                <h2 class="review__title">OUR CUSTOMER REVIEW</h2>
-                <p class="review__description">It is a long established fact that a reader will be distracted by the readable content of 
-                    a page when looking at its layout.</p>
-                <img src="./img/avatar.svg" alt="" class="review__avatar">
-                <span class="review__name">Rasalida Williamson</span>
+            <div class="review__slider_wrapp flex">
+                <div class="btn__slider" id="btn_prev"><i class='bx bx-chevron-left-circle' style='color:#d48a5c' ></i></div>
+                
+                <div class="review__container active">
+                    <p class="review__description">It is a long established fact that a reader will be distracted by the readable content of 
+                        a page when looking at its layout. The point of using Lorem opposed to using 'Content here, content here.</p>
+                    <img src="./img/avatar.svg" alt="" class="review__avatar">
+                    <span class="review__name">Rasalida Williamson</span>
+                </div>
+    
+                <div class="review__container">
+                    <p class="review__description">It is a long established fact that a reader will be distracted by the readable content of 
+                        a page when looking at its layout.</p>
+                    <img src="./img/avatar.svg" alt="" class="review__avatar">
+                    <span class="review__name">Rasalida Williamson</span>
+                </div>
+    
+                <div class="review__container">
+                    <p class="review__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum voluptate fuga, cumque 
+                        aspernatur repellendus dolor quis mollitia quasi ex accusamus!</p>
+                    <img src="./img/avatar.svg" alt="" class="review__avatar">
+                    <span class="review__name">Rasalida Williamson</span>
+                </div>
+    
+                <div class="btn__slider" id="btn_next"><i class='bx bx-chevron-right-circle' style='color:#d48a5c' ></i></div>
             </div>
-
-            <div class="review__container">
-                <a href="#" class="button review__btn">CUSTOMER FEEDBACK</a>
-                <h2 class="review__title">OUR CUSTOMER REVIEW</h2>
-                <p class="review__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum voluptate fuga, cumque 
-                    aspernatur repellendus dolor quis mollitia quasi ex accusamus!</p>
-                <img src="./img/avatar.svg" alt="" class="review__avatar">
-                <span class="review__name">Rasalida Williamson</span>
-            </div>
-
-            <div class="btn__slider" id="btn_next"><i class='bx bx-chevron-right-circle' style='color:#d48a5c' ></i></div>
         </section>
     
         <!-- section reservation -->
@@ -295,7 +295,7 @@
             <div class="footer__content flex">
                 <p class="footer__info">
                     <i class='bx bx-mobile-alt' style='color:#d48a5c' ></i>
-                    <span><b>Phone:</b> +88019 339 702 520</span>
+                    <span><b>Phone:</b> <a href="tel:+1234567890">+88019 339 702 520</a></span>
                 </p>
                 <p class="footer__info">
                     <i class='bx bx-map' style='color:#d48a5c' ></i>

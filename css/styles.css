@@ -4,10 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
 
-/* 1rem = 16px
-1.5rem = 24px
-0.5rem = 8px */
-
 /*Base*/
 *{
   box-sizing: border-box;
@@ -16,13 +12,13 @@
 }
 html{
   scroll-behavior: smooth;
+  font-size: 16px; /* 1rem */
 }
 body{
   margin: 0;
-  font-family: 'Open Sans', sans-serif;;
-  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  background: #F4F1EE;;
+  background: #F4F1EE;
   color: #000000;
   letter-spacing: 0.04em;
 }
@@ -36,6 +32,7 @@ ul{
 }
 a{
   text-decoration: none;
+  color: #1C1A1A;
 }
 img{
   max-width: 100%;
@@ -74,20 +71,63 @@ button{
   top: 0;
   z-index: 10;
 }
+.scroll-header{
+  background-color: #232020;
+  color: #fff;
+}
+.scroll-header .nav__link {
+  color: #fff;
+}
+.scroll-header .active-link::after {
+  background-color: #fff;
+}
 
 /*Buttons*/
 .button{
   display: inline-block;
-  padding: 1rem 1.75rem;
+  padding: 0.6em 1.4em;
   background-color: #232020;
+  line-height: 26px;
   color: #FFFFFF;
-  filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  cursor: pointer;
+  position: relative;
 }
+.button:after {
+  content: '»';
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0;  
+  top: 0.35em;
+  right: -20px;
+  transition: 0.8s;
+}
+.button:hover:after {
+  opacity: 1;
+  right: 5px;
+}
+
 .button_transparent {
   background-color: transparent;
-  color: #000000;
+  color: #000;
   border: 1px solid #D48A5C;
 }
+
+.slide-dark,
+.slide-light {
+  transition: background-color 1s ease;
+}
+.slide-dark:hover {
+  background-color: #232020;
+  border: 1px solid #232020;
+  color: #fff;
+}
+.slide-light:hover {
+  background-color: #F4F1EE;
+  border: 1px solid #D48A5C;
+  color: #000;
+}
+
 
 /*nav*/
 .nav{
@@ -104,12 +144,26 @@ button{
   width: 255px;
 }
 .nav__link {
+  position: relative;
   color: #000000;
+}
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 22px;
+  transform: translateY(-50%);
+  display: block;
+  margin-top: 2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000000;
 }
 .nav__icon {
   width: 118px;
   justify-content: space-between;
-  font-size: 27px;
+  font-size: 1.7rem;
 }
 
 /*Home*/
@@ -119,13 +173,13 @@ button{
 }
 .home__title {
   margin-bottom: 33px;
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 70px;
 }
 .home__description {
   margin-bottom: 55px;
   width: 500px;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 30px;
   color: #404040;
 }
@@ -145,20 +199,20 @@ button{
 .features__img{
   width: 350px;
   transition: .4s;
-  box-shadow: -15px 15px 0px #D48A5C;
+  box-shadow: -15px 15px 0px #d48a5c;
 }
 .features__data:last-child {
   margin-right: 0px;
 }
 .features__data:hover .features__img {
-  box-shadow: 15px -15px 0px #D48A5C;
+  box-shadow: 15px -15px 0px #2a150e;
 }
 .features__title {
   position: absolute;
   top: 35px;
   left: 20px;
   transform: translateY(-50%);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 65px;
   color: #fff;
   text-shadow: 1px 0px 1px #0a0a0a; 
@@ -169,7 +223,7 @@ button{
   top: 16px;
   transform: translateY(-50%);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.04em;
   color: #FFFFFF;
   z-index: 2;
@@ -180,7 +234,7 @@ button{
   bottom: 18px;
   left: 20px;
   transform: translateY(-50%);
-  font-size: 10px;
+  font-size: 0.625rem;
   line-height: 10px;
   color: #FFFFFF;
 }
@@ -223,7 +277,7 @@ button{
 }
 .product__title {
   margin-bottom: 47px;
-  font-size: 55px;
+  font-size: 3.44rem;
   line-height: 65px;
 }
 .product__cards_grid {
@@ -248,14 +302,14 @@ button{
   margin-top: 37px;
   margin-left: 118px;
   margin-bottom: 23px;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .product__price {
   display: block;
   margin-right: 29px;
   margin-bottom: 12px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 26px;
   text-align: right;
   color: #D48A5C;
@@ -308,7 +362,7 @@ button{
   justify-content: space-between;
 }
 .shop__title {
-  font-size: 55px;
+  font-size: 3.44rem;
   line-height: 65px;
   color: #1C1A1A;
 }
@@ -332,7 +386,7 @@ button{
 }
 .shop__subtitle {
   margin-bottom: 13px;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #1C1A1A;
 }
 .shop__price {
@@ -345,8 +399,23 @@ button{
 
 /* preview */
 .review {
-  margin-bottom: 85px;
+  padding-bottom: 85px;
+}
+.review__data {
+  text-align: center;
+}
+.review__btn {
+  margin-bottom: 34px;
+}
+.review__title {
+  margin-bottom: 31px;
+  font-size: 3.44rem;
+  line-height: 65px;
+  color: #1C1A1A;
+}
+.review__slider_wrapp {
   justify-content: space-between;
+  align-items: flex-start;
 }
 .review__container {
   text-align: center;
@@ -356,24 +425,16 @@ button{
   display: block;
 }
 .btn__slider {
-  font-size: 50px;
+  margin-top: 70px;
+  font-size: 3.125rem;
   cursor: pointer;
-}
-.review__btn {
-  margin-bottom: 34px;
-}
-.review__title {
-  margin-bottom: 31px;
-  font-size: 55px;
-  line-height: 65px;
-  color: #1C1A1A;
 }
 .review__description {
   margin-bottom: 39px;
   width: 762px;
-  font-size: 20px;
+  min-height: 100px;
+  font-size: 1.25rem;
   line-height: 30px;
-
   color: #5C5C5C;
 }
 .review__avatar {
@@ -407,13 +468,13 @@ button{
 }
 .reservation__title {
   margin-bottom: 21px;
-  font-size: 29px;
+  font-size: 1.8rem;
   line-height: 28px;
   color: #1C1A1A;
 }
 .reservation__title_span {
   font-family: 'Open Sans';
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #D58A5C;
 }
 .reservation__form {
@@ -425,7 +486,7 @@ button{
   width: 100%;
   height: 50px;
   background-color: #F4F1EE;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 26px;
   color: #5C5C5C;
 }
@@ -450,7 +511,7 @@ button{
 }
 .news__title {
   margin-bottom: 58px;
-  font-size: 55px;
+  font-size: 3.44rem;
   line-height: 65px;
   color: #1C1A1A;
 }
@@ -476,7 +537,7 @@ button{
 }
 .news__details-info {
   margin-bottom: 9px;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 26px;
 }
 .news__details-span {
@@ -484,20 +545,20 @@ button{
 }
 .news__details-title {
   margin-bottom: 9px;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   color: #fff;
 }
 .news__details-link {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 26px;
   color: #EAB665;
   
 }
 .bx-arrow-back {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: .5;
 }
 
@@ -509,12 +570,12 @@ button{
   padding-top: 30px;
   display: block;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 26px;
   color: #1C1A1A;
 }
 .bx-up-arrow-circle {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 /*footer*/
@@ -528,19 +589,20 @@ button{
 }
 .footer__info {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 26px;
   color: #1C1A1A;
 }
 .footer__input-container {
   position: relative;
+  place-items: center;
 }
 .footer__input {
   padding-left: 15px;
   width: 350px;
   height: 40px;
   background-color: #F2EAE2;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 26px;
   color: #8D8D8D;
 }
@@ -549,10 +611,10 @@ button{
   right: 0;
   padding-top: 9px;
   padding-right: 15px;
-  font-size: 19px;
+  font-size: 1.19rem;
 }
 .footer__description {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 26px;
   color: #848484;
 }
@@ -566,17 +628,23 @@ button{
 }
 .footer__social-link {
   padding: 11px;
-  font-size: 20px;
+  font-size: 1.5rem;
   border: 1px solid #6D6D6D;
   border-radius: 4px;
+  transition: all 500ms ease; 
+}
+.footer__social-link:hover {
+  background-color: #6D6D6D;
+  box-shadow: inset 0 0 0 3px #616060;
 }
 .hr {
-  color: #eab665;
+  height: 3px;
+  background-color: #eab665;
 }
 .footer__copy {
   padding-top: 17px;
   padding-bottom: 18px;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 26px;
   text-align: center;
   color: #979797;
