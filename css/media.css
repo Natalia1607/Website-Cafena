@@ -1,0 +1,16 @@
+@media (max-width: 1200px) {
+      .nav__icon {
+        display: flex;
+        cursor: pointer;
+      }
+      .nav__list {
+        display: none;
+      }
+      .no-scroll {
+        overflow-y: hidden;
+      }
+      .show__menu .nav__list{
+        display: flex;
+        flex-direction: column;
+      }           
+}

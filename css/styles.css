@@ -555,7 +555,12 @@ button{
   font-size: 0.875rem;
   line-height: 26px;
   color: #EAB665;
-  
+}
+.bx-arrow-back {
+  display: none;
+}
+.news__details-link:hover .bx-arrow-back {
+  display: inline-block;
 }
 .bx-arrow-back {
   font-size: 1.125rem;
@@ -650,6 +655,13 @@ button{
   color: #979797;
 }
 
+
+.nav__close {
+  display: none;
+}
+.nav__icon {
+  display: none;
+}
 
 
 

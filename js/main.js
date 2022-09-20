@@ -1,6 +1,9 @@
-const prev = document.getElementById('btn_prev'),
-      next = document.getElementById('btn_next'),
-      slides = document.querySelectorAll('.review__container');
+/* Date */
+document.getElementById('dateToday').valueAsDate = new Date();
+
+const prev = document.getElementById('btn_prev');
+const  next = document.getElementById('btn_next');
+const  slides = document.querySelectorAll('.review__container');
 
 let index = 0;
 
@@ -50,6 +53,33 @@ function scrollHeader(){
         logotip.src = './../img/header-logo.png';
     }
 }
+
+/*Show menu*/
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('nav-toggle');
+/* const  navClose = document.getElementById('nav-close'); */
+
+navToggle.addEventListener('click', (event) => {
+    event.stopPropagation;
+    navMenu.classList.toggle('show__menu');
+});
+
+window.addEventListener('click', () => {
+    if (body.classList.contains('no-scroll')) {
+        toggleMobileNav();
+    }
+});
+
+navMenu.addEventListener('click', (event) => {
+    event.stopPropagation();
+});
+
+/* function toggleMobileNav() {
+    navMobile.classList.toggle('show__menu');
+    navBtn.classList.toggle('button_close'); 
+    body.classList.toggle('no-scroll');
+} */
+
 
 window.addEventListener('scroll', scrollHeader);
 next.addEventListener('click', nextSlide);
